@@ -23,6 +23,8 @@ import { radialize } from '@rnacanvas/bases-layout';
 
 import { Box } from '@rnacanvas/boxes';
 
+import { DownloadableFile } from '@rnacanvas/utilities';
+
 document.body.style.margin = '0px';
 document.body.style.padding = '0px';
 
@@ -64,6 +66,8 @@ window.round = round;
 window.radialize = radialize;
 
 window.Box = Box;
+
+window.DownloadableFile = DownloadableFile;
 
 console.log('%cWelcome to RNAcanvas Code!', 'font-weight: bold;');
 console.log('%cA code-centric way of drawing nucleic acid structures...', 'font-weight: bold;');
