@@ -6,7 +6,7 @@ The web browser console can be opened with `Ctrl+Shift+J` (or `Cmd+Option+J` on 
 
 # Quickstart
 
-## Drawing a structure in dot-bracket notation
+### Drawing a structure expressed in dot-bracket notation
 
 ```typescript
 // the structure to draw
@@ -21,4 +21,34 @@ app.drawing.setPadding(500);
 
 // fit the user's view of the drawing to the drawn structure
 app.drawingView.fitToContent();
+```
+
+### Controlling the layout of bases
+
+See the [full documentation](https://pzhaojohnson.github.io/rnacanvas.bases-layout/)
+for the `@rnacanvas/bases-layout` package.
+
+```typescript
+// all bases in the drawing
+var bases = [...app.drawing.bases];
+
+// shift the bases by the given vector
+shift(bases, { x: 500, y: -350 });
+
+// rotate the bases by 120 degrees clockwise
+rotate(bases, 2 * Math.PI / 3);
+
+// represents the central point of all bases
+let centroid = new Centroid(bases);
+
+// recenter the bases at (912, 204)
+centroid.set({ x: 912, y: 204 });
+centroid.get(); // { x: 912, y: 204 }
+
+// all base-pairs in the secondary structure of the drawing
+var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
+
+// radialize the bases
+// (the default layout for the bases in a structure)
+radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
 ```
