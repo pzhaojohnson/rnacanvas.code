@@ -73,5 +73,5 @@ window.Box = Box;
 
 window.DownloadableFile = DownloadableFile;
 
-console.log('%cWelcome to RNAcanvas Code!', 'font-weight: bold;');
+console.log(`%cWelcome to RNAcanvas Code! (v${VERSION})`, 'font-weight: bold;');
 console.log('%cA code-centric way of drawing nucleic acid structures...', 'font-weight: bold;');
