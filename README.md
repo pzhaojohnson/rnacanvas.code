@@ -53,7 +53,7 @@ var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
 radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
 ```
 
-### Exporting the drawing
+### Exporting a drawing
 
 RNAcanvas Code supports exporting drawings in SVG format,
 which can be opened in vector graphics softwares like Adobe Illustrator and Inkscape.
