@@ -1,5 +1,7 @@
 import { version as VERSION } from '../package.json';
 
+import { docs } from './docs';
+
 import { RNAcanvas } from '@rnacanvas/app-object';
 
 import { consecutivePairs } from '@rnacanvas/base-pairs';
@@ -39,6 +41,8 @@ app.appendTo(document.body);
 
 window.VERSION = VERSION;
 
+window.docs = docs;
+
 // make the app object accessible globally
 window.app = app;
 
@@ -75,3 +79,4 @@ window.DownloadableFile = DownloadableFile;
 
 console.log(`%cWelcome to RNAcanvas Code! (v${VERSION})`, 'font-weight: bold;');
 console.log('%cA code-centric way of drawing nucleic acid structures...', 'font-weight: bold;');
+console.log('%cType docs() to view the documentation for the app.', 'font-weight: bold;');
