@@ -1,6 +1,6 @@
-# General Usage
+# Console Interaction
 
-RNAcanvas Code can be interacted with through the web browser console.
+RNAcanvas Code can be interacted with using the web browser console.
 
 The web browser console can be opened with `Ctrl+Shift+J` (or `Cmd+Option+J` on Mac).
 
@@ -55,8 +55,9 @@ radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpaci
 
 ### Exporting a drawing
 
-RNAcanvas Code supports exporting drawings in SVG format,
-which can be opened in vector graphics softwares like Adobe Illustrator and Inkscape.
+Drawings can be exported in SVG format,
+which can be opened (and edited further) in vector graphics softwares
+like Adobe Illustrator and Inkscape.
 
 ```typescript
 // the outer HTML of the drawing is SVG XML that can be exported
