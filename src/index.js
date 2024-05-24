@@ -1,3 +1,5 @@
+import { version as VERSION } from '../package.json';
+
 import { RNAcanvas } from '@rnacanvas/app-object';
 
 import { consecutivePairs } from '@rnacanvas/base-pairs';
@@ -34,6 +36,8 @@ app.domNode.style.width = '100vw';
 app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
+
+window.VERSION = VERSION;
 
 // make the app object accessible globally
 window.app = app;
