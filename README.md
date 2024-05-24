@@ -6,7 +6,7 @@ The web browser console can be opened with `Ctrl+Shift+J` (or `Cmd+Option+J` on 
 
 # Quickstart
 
-### Drawing a structure expressed in dot-bracket notation
+### Drawing a structure
 
 ```typescript
 // the structure to draw
@@ -51,4 +51,16 @@ var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
 // radialize the bases
 // (the default layout for the bases in a structure)
 radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
+```
+
+### Exporting the drawing
+
+RNAcanvas Code supports exporting drawings in SVG format,
+which can be opened in vector graphics softwares like Adobe Illustrator and Inkscape.
+
+```typescript
+// the outer HTML of the drawing is SVG XML that can be exported
+var file = new DownloadableFile(app.drawing.outerHTML);
+
+file.downloadAs('drawing.svg', { type: 'text/plain' });
 ```
