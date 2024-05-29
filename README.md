@@ -2,7 +2,7 @@
 
 # Console Interaction
 
-RNAcanvas Code can be interacted with using the web browser console.
+<b>RNAcanvas Code</b> can be interacted with using the web browser console.
 
 The web browser console can be opened with `Ctrl+Shift+J` (or `Cmd+Option+J` on Mac).
 
