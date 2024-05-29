@@ -10,7 +10,7 @@ The web browser console can be opened with `Ctrl+Shift+J` (or `Cmd+Option+J` on 
 
 ### Drawing a structure
 
-```typescript
+```javascript
 // the structure to draw
 var seq = 'AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC';
 var dotBracket = '(((((((....)))))))...(((((((((((.....(((((.......)))))..))))))))))).....';
@@ -30,7 +30,7 @@ app.drawingView.fitToContent();
 See the [full documentation](https://pzhaojohnson.github.io/rnacanvas.bases-layout/)
 for the `@rnacanvas/bases-layout` package.
 
-```typescript
+```javascript
 // all bases in the drawing
 var bases = [...app.drawing.bases];
 
@@ -61,7 +61,7 @@ Drawings can be exported in SVG format,
 which can be opened (and edited further) in vector graphics softwares
 like Adobe Illustrator and Inkscape.
 
-```typescript
+```javascript
 // the outer HTML of the drawing is SVG XML that can be exported
 var file = new DownloadableFile(app.drawing.outerHTML);
 
