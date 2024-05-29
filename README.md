@@ -55,6 +55,39 @@ var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
 radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
 ```
 
+### Editing and styling drawing elements
+
+Attributes and properties of elements in the drawing of the app can be directly accessed and set.
+
+```javascript
+// make all U's lowercase and red
+[...app.drawing.bases].filter(b => b.textContent === 'U').forEach(b => {
+  b.textContent = 'u';
+  b.setAttribute('fill', 'red');
+});
+
+// trace the sequence of the structure
+[...app.drawing.primaryBonds].forEach(pb => {
+  pb.set({
+    basePadding1: 0,
+    basePadding2: 0,
+    attributes: {
+      'stroke': 'blue',
+      'stroke-width': '2',
+      'stroke-linecap': 'round',
+    },
+  });
+});
+
+// give all secondary bonds a line thickness of 3 and rounded ends
+[...app.drawing.secondaryBonds].forEach(sb => {
+  sb.setAttributes({
+    'stroke-width': '3',
+    'stroke-linecap': 'round',
+  });
+});
+```
+
 ### Exporting a drawing
 
 Drawings can be exported in SVG format,
