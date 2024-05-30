@@ -42,7 +42,7 @@ shift(bases, { x: 500, y: -350 });
 rotate(bases, 2 * Math.PI / 3);
 
 // represents the central point of all bases
-let centroid = new Centroid(bases);
+var centroid = new Centroid(bases);
 
 // recenter the bases at (912, 204)
 centroid.set({ x: 912, y: 204 });
