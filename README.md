@@ -101,3 +101,24 @@ var file = new DownloadableFile(app.drawing.outerHTML);
 
 file.downloadAs('drawing.svg', { type: 'text/plain' });
 ```
+
+# The RNAcanvas app object
+
+The RNAcanvas app object (accessible via the `app` global variable)
+represents the entire RNAcanvas app.
+
+```javascript
+// the RNAcanvas app object
+app
+
+// the nucleic acid structure drawing of the app
+app.drawing
+
+// the scrollbars for the drawing
+app.horizontalDrawingScrollbar
+app.verticalDrawingScrollbar
+
+// represents the user's view of the drawing
+// (can be used to fit the user's view to the drawn structure, for instance)
+app.drawingView
+```
