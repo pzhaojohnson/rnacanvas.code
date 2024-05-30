@@ -121,4 +121,10 @@ app.verticalDrawingScrollbar
 // represents the user's view of the drawing
 // (can be used to fit the user's view to the drawn structure, for instance)
 app.drawingView
+
+var seq = 'AAAAGAUAGCCUCCCUCCUCGCGCGGGGGGGGGGCCUGCCC';
+var dotBracket = '........(((((((((((.....)))))))))))......';
+
+// appends the provided dot-bracket structure to the drawing of the app
+app.drawDotBracket(seq, dotBracket);
 ```
