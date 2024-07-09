@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "description": "Draw nucleic acid structures in a code-centric manner",
   "repository": {
     "type": "git",
@@ -17,7 +17,7 @@
     "webpack-cli": "^5.1.4"
   },
   "dependencies": {
-    "@rnacanvas/app-object": "^3.0.0",
+    "@rnacanvas/app-object": "^4.5.0",
     "@rnacanvas/base-pairs": "^2.2.0",
     "@rnacanvas/bases-layout": "^2.1.1",
     "@rnacanvas/boxes": "^2.2.0",
