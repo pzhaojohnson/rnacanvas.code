@@ -26,6 +26,22 @@ app.drawing.setPadding(500);
 app.drawingView.fitToContent();
 ```
 
+### Drawing a schema
+
+Schemas in the [R2DT format](https://rnacentral.org/r2dt)
+can be directly drawn.
+
+```javascript
+// a URL to an RNA 2D JSON schema
+var schemaURL = 'https://www.ebi.ac.uk/Tools/services/rest/r2dt/result/r2dt-R20240905-135809-0737-54467708-p1m/json';
+
+fetch(schemaURL)
+  .then(response => response.text())
+  .then(text => app.drawSchema(JSON.parse(text)))
+  .then(() => app.drawing.setPadding(1000))
+  .then(() => app.drawingView.fitToContent());
+```
+
 ### Controlling the layout of bases
 
 See the [full documentation](https://pzhaojohnson.github.io/rnacanvas.bases-layout/)
