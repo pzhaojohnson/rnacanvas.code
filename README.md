@@ -28,7 +28,7 @@ app.drawingView.fitToContent();
 
 ### Drawing from schema
 
-Schemas in the [R2DT format](https://rnacentral.org/r2dt)
+Schemas in the [R2DT format](https://docs.r2dt.bio/en/latest/editors.html#rna-2d-json-schema)
 can be directly drawn.
 
 ```javascript
