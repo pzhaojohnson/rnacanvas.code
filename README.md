@@ -26,7 +26,7 @@ app.drawing.setPadding(500);
 app.drawingView.fitToContent();
 ```
 
-### Drawing a schema
+### Drawing from schema
 
 Schemas in the [R2DT format](https://rnacentral.org/r2dt)
 can be directly drawn.
@@ -38,9 +38,15 @@ var schemaURL = 'https://www.ebi.ac.uk/Tools/services/rest/r2dt/result/r2dt-R202
 fetch(schemaURL)
   .then(response => response.text())
   .then(text => app.drawSchema(JSON.parse(text)))
+  // ensure the drawing is big enough to fit the drawn structure
   .then(() => app.drawing.setPadding(1000))
+  // fit the user's view of the drawing to the drawn structure
   .then(() => app.drawingView.fitToContent());
 ```
+
+Note that this method may throw for invalid schemas,
+in which case the drawing of the app may be left in a partially drawn state
+(e.g., with only part of a schema having been drawn).
 
 ### Controlling the layout of bases
 
