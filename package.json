@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Draw nucleic acid structures in a code-centric manner",
   "repository": {
     "type": "git",
