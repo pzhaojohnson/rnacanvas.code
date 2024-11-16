@@ -25,7 +25,7 @@ import { stemmify } from '@rnacanvas/bases-layout';
 
 import { circularize, round } from '@rnacanvas/bases-layout';
 
-import { radialize } from '@rnacanvas/bases-layout';
+import { untangle } from '@rnacanvas/bases-layout';
 
 import { Box } from '@rnacanvas/boxes';
 
@@ -77,7 +77,7 @@ window.stemmify = stemmify;
 window.circularize = circularize;
 window.round = round;
 
-window.radialize = radialize;
+window.untangle = untangle;
 
 window.Box = Box;
 

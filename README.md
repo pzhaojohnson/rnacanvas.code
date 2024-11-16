@@ -74,9 +74,9 @@ centroid.get(); // { x: 912, y: 204 }
 // all base-pairs in the secondary structure of the drawing
 var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
 
-// radialize the bases
+// untangle the bases
 // (the default layout for the bases in a structure)
-radialize(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
+untangle(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
 ```
 
 ### Editing and styling drawing elements
