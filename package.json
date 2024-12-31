@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "7.9.4",
+  "version": "7.9.5",
   "description": "Draw nucleic acid structures with code",
   "repository": {
     "type": "git",
@@ -14,7 +14,7 @@
   "license": "MIT",
   "devDependencies": {
     "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4"
+    "webpack-cli": "^6.0.1"
   },
   "dependencies": {
     "@rnacanvas/app-object": "^9.0.0",
