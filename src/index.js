@@ -43,7 +43,9 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
-[...app.keyBindings].forEach(kb => kb.owner = document.body);
+// allows app key bindings to work immediately
+// (otherwise the user would have to click the app first, for instance)
+app.domNode.focus();
 
 window.VERSION = VERSION;
 
