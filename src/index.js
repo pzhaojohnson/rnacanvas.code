@@ -43,6 +43,8 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
+[...app.keyBindings].forEach(kb => kb.owner = document.body);
+
 window.VERSION = VERSION;
 
 window.docs = docs;
