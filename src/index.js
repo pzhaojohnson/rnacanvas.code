@@ -43,9 +43,10 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
-// allows app key bindings to work immediately
-// (otherwise the user would have to click the app first, for instance)
-app.domNode.focus();
+// in Safari the `tabindex` HTML property is disabled by default
+// (so key bindings are bound to the entire webpage here)
+app.domNode.tabIndex = -1;
+[...app.keyBindings].forEach(kb => kb.owner = document.body);
 
 window.VERSION = VERSION;
 
