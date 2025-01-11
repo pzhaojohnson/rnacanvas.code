@@ -33,6 +33,8 @@ import { DownloadableFile } from '@rnacanvas/utilities';
 
 import { URLParamsHandler } from '@rnacanvas/code.url-params';
 
+import { PasteHandler } from '@rnacanvas/paste-interface';
+
 document.body.style.margin = '0px';
 document.body.style.padding = '0px';
 
@@ -96,6 +98,12 @@ try {
   console.warn(error);
   console.warn('Unable to process URL parameters.');
 }
+
+let pasteHandler = new PasteHandler(app);
+
+// only handle paste events on the document body itself
+// (let the app handle paste events that occur inside the app DOM node)
+document.body.addEventListener('paste', event => event.target === document.body ? pasteHandler.handle(event) : {});
 
 console.log(`%cWelcome to RNAcanvas Code! (v${VERSION})`, 'font-weight: bold;');
 console.log('%cA code-centric way of drawing nucleic acid structures...', 'font-weight: bold;');

@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "8.5.0",
+  "version": "8.6.0",
   "description": "Draw nucleic acid structures with code",
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "@rnacanvas/bases-layout": "^4.0.1",
     "@rnacanvas/boxes": "^2.2.0",
     "@rnacanvas/code.url-params": "^5.0.0",
+    "@rnacanvas/paste-interface": "^1.1.0",
     "@rnacanvas/utilities": "^5.0.0"
   }
 }
