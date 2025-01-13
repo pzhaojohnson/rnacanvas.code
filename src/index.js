@@ -47,7 +47,7 @@ app.appendTo(document.body);
 
 // in Safari the `tabindex` HTML property is disabled by default
 // (so key bindings are bound to the entire webpage here)
-app.domNode.tabIndex = -1;
+app.domNode.removeAttribute('tabindex');
 [...app.keyBindings].forEach(kb => kb.owner = document.body);
 
 window.VERSION = VERSION;
