@@ -10,22 +10,22 @@ import { consecutivePairs } from '@rnacanvas/base-pairs';
 
 import { parseDotBracket } from '@rnacanvas/base-pairs';
 
-import { Centroid } from '@rnacanvas/bases-layout';
+import { Centroid } from '@rnacanvas/layout';
 
-import { Direction } from '@rnacanvas/bases-layout';
+import { Direction } from '@rnacanvas/layout';
 
-import { shift } from '@rnacanvas/bases-layout';
-import { rotate } from '@rnacanvas/bases-layout';
+import { shift } from '@rnacanvas/layout';
+import { rotate } from '@rnacanvas/layout';
 
-import { flipX, flipY } from '@rnacanvas/bases-layout';
-import { flipSelfX, flipSelfY } from '@rnacanvas/bases-layout';
+import { flipX, flipY } from '@rnacanvas/layout';
+import { flipSelfX, flipSelfY } from '@rnacanvas/layout';
 
-import { straighten, linearize } from '@rnacanvas/bases-layout';
-import { stemmify } from '@rnacanvas/bases-layout';
+import { straighten, linearize } from '@rnacanvas/layout';
+import { stemmify } from '@rnacanvas/layout';
 
-import { circularize, round } from '@rnacanvas/bases-layout';
+import { circularize, round } from '@rnacanvas/layout';
 
-import { untangle } from '@rnacanvas/bases-layout';
+import { untangle } from '@rnacanvas/layout';
 
 import { Box } from '@rnacanvas/boxes';
 
