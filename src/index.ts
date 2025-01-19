@@ -50,45 +50,45 @@ app.appendTo(document.body);
 app.domNode.removeAttribute('tabindex');
 [...app.keyBindings].forEach(kb => kb.owner = document.body);
 
-window.VERSION = VERSION;
+(window as any).VERSION = VERSION;
 
-window.docs = docs;
+(window as any).docs = docs;
 
-window.assistant = assistant;
+(window as any).assistant = assistant;
 
 // make the app object accessible globally
-window.app = app;
+(window as any).app = app;
 
-window.consecutivePairs = consecutivePairs;
+(window as any).consecutivePairs = consecutivePairs;
 
-window.parseDotBracket = parseDotBracket;
+(window as any).parseDotBracket = parseDotBracket;
 
-window.Centroid = Centroid;
+(window as any).Centroid = Centroid;
 
-window.Direction = Direction;
+(window as any).Direction = Direction;
 
-window.shift = shift;
-window.rotate = rotate;
+(window as any).shift = shift;
+(window as any).rotate = rotate;
 
-window.flipX = flipX;
-window.flipY = flipY;
+(window as any).flipX = flipX;
+(window as any).flipY = flipY;
 
-window.flipSelfX = flipSelfX;
-window.flipSelfY = flipSelfY;
+(window as any).flipSelfX = flipSelfX;
+(window as any).flipSelfY = flipSelfY;
 
-window.straighten = straighten;
-window.linearize = linearize;
+(window as any).straighten = straighten;
+(window as any).linearize = linearize;
 
-window.stemmify = stemmify;
+(window as any).stemmify = stemmify;
 
-window.circularize = circularize;
-window.round = round;
+(window as any).circularize = circularize;
+(window as any).round = round;
 
-window.untangle = untangle;
+(window as any).untangle = untangle;
 
-window.Box = Box;
+(window as any).Box = Box;
 
-window.DownloadableFile = DownloadableFile;
+(window as any).DownloadableFile = DownloadableFile;
 
 try {
   let url = new URL(document.URL);
