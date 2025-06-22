@@ -1,4 +1,4 @@
-import { version as VERSION } from '../package.json';
+import pack from '../package.json';
 
 import { docs } from './docs';
 
@@ -34,6 +34,8 @@ import { DownloadableFile } from '@rnacanvas/utilities';
 import { URLParamsHandler } from '@rnacanvas/code.url-params';
 
 import { PasteHandler } from '@rnacanvas/paste-interface';
+
+const VERSION = pack.version;
 
 document.body.style.margin = '0px';
 document.body.style.padding = '0px';
