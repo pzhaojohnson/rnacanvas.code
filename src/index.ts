@@ -47,6 +47,16 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
+let drawingNameObserver = new MutationObserver(() => document.title = app.drawing.name ?? 'RNAcanvas Code');
+drawingNameObserver.observe(app.drawing.domNode, { attributes: true, attributeFilter: ['data-name'] });
+
+let titleElement = document.querySelector('title');
+
+if (titleElement) {
+  let documentTitleObserver = new MutationObserver(() => app.drawing.name = document.title);
+  documentTitleObserver.observe(titleElement, { childList: true, characterData: true, subtree: true });
+}
+
 // in Safari the `tabindex` HTML property is disabled by default
 // (so key bindings are bound to the entire webpage here)
 app.domNode.removeAttribute('tabindex');
