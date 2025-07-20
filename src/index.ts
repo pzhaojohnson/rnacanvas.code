@@ -47,13 +47,27 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
-let drawingNameObserver = new MutationObserver(() => document.title = app.drawing.name ?? 'RNAcanvas Code');
+let drawingNameObserver = new MutationObserver(() => {
+  let documentTitle = app.drawing.name ?? '';
+
+  // if clause is necessary to prevent infinite callbacks
+  if (document.title !== documentTitle) {
+    document.title = documentTitle;
+  }
+});
+
 drawingNameObserver.observe(app.drawing.domNode, { attributes: true, attributeFilter: ['data-name'] });
 
 let titleElement = document.querySelector('title');
 
 if (titleElement) {
-  let documentTitleObserver = new MutationObserver(() => app.drawing.name = document.title);
+  let documentTitleObserver = new MutationObserver(() => {
+    // if clause is necessary to prevent infinite callbacks
+    if (app.drawing.name !== document.title) {
+      app.drawing.name = document.title;
+    }
+  });
+
   documentTitleObserver.observe(titleElement, { childList: true, characterData: true, subtree: true });
 }
 
