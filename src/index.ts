@@ -47,7 +47,8 @@ app.domNode.style.height = '100vh';
 
 app.appendTo(document.body);
 
-let drawingNameObserver = new MutationObserver(() => document.title = app.drawing.name ?? 'RNAcanvas Code');
+// don't set the document title to an empty string
+let drawingNameObserver = new MutationObserver(() => document.title = app.drawing.name ? app.drawing.name : 'RNAcanvas Code');
 drawingNameObserver.observe(app.drawing.domNode, { attributes: true, attributeFilter: ['data-name'] });
 
 // in Safari the `tabindex` HTML property is disabled by default
