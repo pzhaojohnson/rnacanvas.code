@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "description": "Flexible nucleic acid structure drawing",
   "repository": {
     "type": "git",
@@ -11,7 +11,7 @@
     "build": "webpack"
   },
   "author": "pzhaojohnson",
-  "license": "MIT",
+  "license": "GPL-3.0-only",
   "devDependencies": {
     "ts-loader": "^9.5.2",
     "typescript": "^6.0.2",
@@ -19,7 +19,7 @@
     "webpack-cli": "^7.0.0"
   },
   "dependencies": {
-    "@rnacanvas/app-object": "^15.0.0",
+    "@rnacanvas/app-object": "^16.0.0",
     "@rnacanvas/base-pairs": "^2.2.0",
     "@rnacanvas/boxes": "^5.0.1",
     "@rnacanvas/code.url-params": "^9.0.0",
