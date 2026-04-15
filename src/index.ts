@@ -111,7 +111,6 @@ let pasteHandler = new PasteHandler(app);
 // (let the app handle paste events that occur inside the app DOM node)
 document.body.addEventListener('paste', event => event.target === document.body ? pasteHandler.handle(event) : {});
 
-console.log(`%cWelcome to RNAcanvas Code! (v${VERSION})`, 'font-weight: bold;');
-console.log('%cA code-centric way of drawing nucleic acid structures...', 'font-weight: bold;');
-console.log('%cUse the docs() function to open the documentation for the app in a new tab.', 'font-weight: bold;');
-console.log('%cUse the assistant() function to open the RNAcanvas AI assistant in a new tab.', 'font-weight: bold;');
+console.log(`%cWelcome to RNAcanvas 2.0! (v${VERSION})`, 'font-weight: bold;');
+console.log('%cUse the docs() function to open the documentation for the app.', 'font-weight: bold;');
+console.log('%cUse the assistant() function to open the RNAcanvas custom GPT.', 'font-weight: bold;');
