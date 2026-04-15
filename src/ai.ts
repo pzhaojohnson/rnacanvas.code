@@ -1,6 +1,6 @@
 /**
- * Opens the RNAcanvas AI assistant custom GPT in a new tab.
+ * Opens the RNAcanvas custom GPT in a new tab.
  */
-export function assistant() {
+export function ai() {
   window.open('https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-ai-assistant', '_blank');
 }

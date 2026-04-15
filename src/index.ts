@@ -2,7 +2,7 @@ import pack from '../package.json';
 
 import { docs } from './docs';
 
-import { assistant } from './assistant';
+import { ai } from './ai';
 
 import { RNAcanvas } from '@rnacanvas/app-object';
 
@@ -60,7 +60,7 @@ app.domNode.removeAttribute('tabindex');
 
 (window as any).docs = docs;
 
-(window as any).assistant = assistant;
+(window as any).ai = ai;
 
 // make the app object accessible globally
 (window as any).app = app;
@@ -113,4 +113,4 @@ document.body.addEventListener('paste', event => event.target === document.body 
 
 console.log(`%cWelcome to RNAcanvas 2.0! (v${VERSION})`, 'font-weight: bold;');
 console.log('%cUse the docs() function to open the documentation for the app.', 'font-weight: bold;');
-console.log('%cUse the assistant() function to open the RNAcanvas custom GPT.', 'font-weight: bold;');
+console.log('%cUse the ai() function to open the RNAcanvas custom GPT.', 'font-weight: bold;');
