@@ -1,8 +1,8 @@
-<b>RNAcanvas Code</b> is a web app for code-centric drawing of nucleic acid structures.
+<b>RNAcanvas 2.0</b> is a web app for flexible and reliable drawing of nucleic acid structures.
 
 # Console Interaction
 
-<b>RNAcanvas Code</b> can be interacted with using the web browser console.
+<b>RNAcanvas 2.0</b> can be interacted with using the web browser console.
 
 The web browser console can be opened by pressing `Ctrl+Shift+I` (or `Cmd+Option+I` on Mac)
 and switching to the console tab.
