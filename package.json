@@ -1,6 +1,6 @@
 {
   "name": "@rnacanvas/code",
-  "version": "17.2.1",
+  "version": "17.3.0",
   "description": "Flexible nucleic acid structure drawing",
   "repository": {
     "type": "git",
@@ -22,9 +22,9 @@
     "@rnacanvas/app-object": "^17.0.0",
     "@rnacanvas/base-pairs": "^2.2.0",
     "@rnacanvas/boxes": "^5.0.1",
-    "@rnacanvas/code.url-params": "^9.0.0",
+    "@rnacanvas/code.url-params": "^11.0.0",
     "@rnacanvas/layout": "^1.0.0",
-    "@rnacanvas/paste-interface": "^9.0.0",
+    "@rnacanvas/paste-interface": "^10.0.0",
     "@rnacanvas/utilities": "^7.1.0"
   }
 }
