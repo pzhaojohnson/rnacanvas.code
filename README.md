@@ -20,7 +20,7 @@ and going to the `Console` tab.
 By default, RNAcanvas initializes certain variables within the global JavaScript environment
 (such as a reference to the RNAcanvas `app` object).
 
-# Drawing a structure
+## Drawing a structure
 
 In general, the `draw()` method of the RNAcanvas app object tries to support common sequence and nucleic acid structure formats.
 
@@ -87,7 +87,7 @@ Note that this method may throw for invalid schemas,
 in which case the drawing of the app may be left in a partially drawn state
 (e.g., with only part of a schema having been drawn).
 
-### Editing and styling drawing elements
+## Editing and styling drawing elements
 
 Attributes and properties of drawing elements can be directly accessed and set.
 
@@ -120,7 +120,7 @@ Attributes and properties of drawing elements can be directly accessed and set.
 });
 ```
 
-### Controlling the layout of bases
+## Controlling the layout of bases
 
 The [@rnacanvas/layout](https://github.com/pzhaojohnson/rnacanvas.layout) package
 provides key functionality for arranging the bases in a drawing.
@@ -149,7 +149,7 @@ var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
 untangle(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
 ```
 
-### Exporting a drawing
+## Exporting a drawing
 
 Drawings can be exported in SVG format.
 
