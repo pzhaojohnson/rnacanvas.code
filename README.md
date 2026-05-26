@@ -68,13 +68,19 @@ var schemaURL = 'https://www.ebi.ac.uk/Tools/services/rest/r2dt/result/r2dt-R202
 
 fetch(schemaURL)
   .then(response => response.text())
+
+  // draw the schema
   .then(text => app.drawSchema(JSON.parse(text)))
+
   // ensure the drawing is big enough to fit the drawn structure
   .then(() => app.drawing.setPadding(1000))
+
   // close the Start page if it is open
   .then(() => app.startPage.close())
+
   // reshow the peripheral UI (in case it was hidden)
   .then(() => app.peripheralUI.show())
+
   // fit the user's view of the drawing to the drawn structure
   .then(() => app.view.fitTo(app.drawing.contentBBox.padded({ percentage: 10 }));
 ```
