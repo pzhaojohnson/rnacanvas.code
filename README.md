@@ -143,40 +143,15 @@ untangle(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacin
 
 ### Exporting a drawing
 
-Drawings can be exported in SVG format,
-which can be opened (and edited further) in vector graphics softwares
-like Adobe Illustrator and Inkscape.
+Drawings can be exported in SVG format.
+
+SVG images are vector graphics images
+and can be opened (and edited further) in vector graphics softwares such as Adobe Illustrator and Inkscape.
 
 ```javascript
-// the outer HTML of the drawing is SVG XML that can be exported
-var file = new DownloadableFile(app.drawing.outerHTML);
+// create a downloadable file containing the SVG content of the drawing
+var file = new DownloadableFile('Drawing.svg', app.drawing.outerXML, { type: 'text/plain' });
 
-file.downloadAs('drawing.svg', { type: 'text/plain' });
-```
-
-# The RNAcanvas app object
-
-The RNAcanvas app object (accessible via the `app` global variable)
-represents the entire RNAcanvas app.
-
-```javascript
-// the RNAcanvas app object
-app
-
-// the nucleic acid structure drawing of the app
-app.drawing
-
-// the scrollbars for the drawing
-app.horizontalDrawingScrollbar
-app.verticalDrawingScrollbar
-
-// represents the user's view of the drawing
-// (can be used to fit the user's view to the drawn structure, for instance)
-app.drawingView
-
-var seq = 'AAAAGAUAGCCUCCCUCCUCGCGCGGGGGGGGGGCCUGCCC';
-var dotBracket = '........(((((((((((.....)))))))))))......';
-
-// appends the provided dot-bracket structure to the drawing of the app
-app.drawDotBracket(seq, dotBracket);
+// download the drawing
+file.download();
 ```
