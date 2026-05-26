@@ -12,14 +12,12 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 
 <b>RNAcanvas Code</b> can be interacted with using the web browser console.
 
-## Opening the web browser console
+### Opening the web browser console
 
 Usually the web browser console can be opened by pressing `Ctrl+Shift+I` (or `Option+Command+I` on Mac)
 and going to the `Console` tab.
 
-# Quickstart
-
-### Drawing a structure
+# Drawing structures
 
 ```javascript
 // the structure to draw
