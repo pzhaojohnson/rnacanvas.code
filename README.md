@@ -3,7 +3,7 @@
 Two of the main goals of RNAcanvas Code are:
 
 - Complete drawing flexiblity
-- A code interface
+- [A code interface](https://github.com/pzhaojohnson/rnacanvas.code/tree/main#code-interface)
 
 Feel free to send any questions to [contact@rnacanvas.app](contact@rnacanvas.app)
 or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on GitHub.
