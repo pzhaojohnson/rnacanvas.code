@@ -14,7 +14,7 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 
 ## Opening the web browser console
 
-Usually by default the web browser console can be opened by pressing `Ctrl+Shift+I` (or `Option+Command+I` on Mac)
+Usually the web browser console can be opened by pressing `Ctrl+Shift+I` (or `Option+Command+I` on Mac)
 and going to the `Console` tab.
 
 # Quickstart
