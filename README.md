@@ -17,21 +17,30 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 Usually the web browser console can be opened by pressing `Ctrl+Shift+I` (or `Option+Command+I` on Mac)
 and going to the `Console` tab.
 
-# Drawing structures
+By default, RNAcanvas initializes certain variables within the global JavaScript environment
+(such as a reference to the RNAcanvas `app` object).
+
+# Drawing a structure
+
+In general, the `draw()` method of the RNAcanvas app object tries to support common sequence and nucleic acid structure formats.
 
 ```javascript
-// the structure to draw
-var seq = 'AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC';
-var dotBracket = '(((((((....)))))))...(((((((((((.....(((((.......)))))..))))))))))).....';
+app.draw(`
+  AGAGUAGCAUUCUGCUUUAGACUGUUAACUUUAUGAACCACGCGUGUCACGUGGGGAGAGUUAACAGCGCCC
+  (((((((....)))))))...(((((((((((.....(((((.......)))))..))))))))))).....
+`);
 
-app.drawDotBracket(seq, dotBracket);
+// ensure that the drawing is large enough for the drawn structure
+app.drawing.setPadding(1000);
 
-// add some extra space around the drawn structure
-// (and ensure that the drawing is big enough for the drawn structure)
-app.drawing.setPadding(500);
+// close the Start page if it's still open
+app.startPage.close();
+
+// reshow the peripheral UI (e.g., the Toolbar) in case it was hidden
+app.peripheralUI.show();
 
 // fit the user's view of the drawing to the drawn structure
-app.drawingView.fitToContent();
+app.view.fitTo(app.drawing.contentBBox.padded({ percentage: 10 }));
 ```
 
 ### Drawing from schema
