@@ -43,6 +43,8 @@ app.peripheralUI.show();
 app.view.fitTo(app.drawing.contentBBox.padded({ percentage: 10 }));
 ```
 
+A full list of supported input formats can be found [here](https://github.com/pzhaojohnson/rnacanvas.code/blob/main/src/input_formats.txt).
+
 ### Drawing from schema
 
 [RNA 2D JSON schemas](https://docs.r2dt.bio/en/latest/editors.html#rna-2d-json-schema)
