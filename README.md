@@ -62,7 +62,7 @@ are utilized by software tools such as [R2DT](https://rnacentral.org/r2dt)).
 
 ```javascript
 // a URL to an RNA 2D schema
-var schemaURL = 'https://www.ebi.ac.uk/Tools/services/rest/r2dt/result/r2dt-R20240905-135809-0737-54467708-p1m/json';
+var schemaURL = 'https://www.ebi.ac.uk/Tools/services/rest/r2dt/result/r2dt-R20260527-022930-0302-23477155-p1m/json';
 
 fetch(schemaURL)
   .then(response => response.text())
