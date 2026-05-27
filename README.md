@@ -143,7 +143,7 @@ centroid.set({ x: 912, y: 204 });
 centroid.get(); // { x: 912, y: 204 }
 
 // all base-pairs in the secondary structure of the drawing
-var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]];
+var basePairs = [...app.drawing.secondaryBonds].map(sb => [...sb.basePair]);
 
 // apply the RNAcanvas untangling algorithm
 untangle(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacing: 10 });
