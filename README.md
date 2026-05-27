@@ -11,7 +11,7 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 # Custom GPT
 
 Perhaps, the most straightforward way to learn more about RNAcanvas
-is to ask the RNAcanvas [custom GPT](https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-gpt).
+is to ask questions to the RNAcanvas [custom GPT](https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-gpt).
 
 Of course, the RNAcanvas custom GPT may make mistakes sometimes.
 
