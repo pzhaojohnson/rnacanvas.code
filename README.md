@@ -8,6 +8,13 @@ Two of the main goals of RNAcanvas Code are:
 Feel free to send any questions to [contact@rnacanvas.app](contact@rnacanvas.app)
 or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on GitHub.
 
+# Custom GPT
+
+Perhaps, the most straightforward way to learn more about RNAcanvas
+is to ask the RNAcanvas [custom GPT](https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-gpt).
+
+Of course, the RNAcanvas custom GPT may make mistakes sometimes.
+
 # Code interface
 
 <b>RNAcanvas Code</b> can be interacted with using the web browser console.
