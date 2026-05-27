@@ -80,7 +80,7 @@ fetch(schemaURL)
   .then(() => app.peripheralUI.show())
 
   // fit the user's view of the drawing to the drawn structure
-  .then(() => app.view.fitTo(app.drawing.contentBBox.padded({ percentage: 10 }));
+  .then(() => app.view.fitTo(app.drawing.contentBBox.padded({ percentage: 10 })));
 ```
 
 Note that this method may throw for invalid schemas,
