@@ -18,10 +18,10 @@ Some features that RNAcanvas Code doesn't yet have...
 
 # Custom GPT
 
-Perhaps, the most straightforward way to learn more about the RNAcanvas app and its codebase
+Perhaps, the most straightforward way to learn more about the RNAcanvas Code app and its codebase
 is to ask questions to the [RNAcanvas GPT](https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-gpt).
 
-(The RNAcanvas GPT has been trained on the entire RNAcanvas codebase.)
+(The RNAcanvas GPT has been trained on the entire RNAcanvas Code codebase.)
 
 Of course, the RNAcanvas GPT may make mistakes sometimes.
 
