@@ -8,9 +8,9 @@ Two of the main goals of RNAcanvas Code are:
 Feel free to send any questions to [contact@rnacanvas.app](contact@rnacanvas.app)
 or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on GitHub.
 
-### In progress
+<b>In progress:</b>
 
-Some features that RNAcanvas Code doesn't yet have:
+Some features that RNAcanvas Code doesn't yet have...
 
 - (Curved) tertiary bonds
 - Leontis-Westhof bond notations (i.e., strung elements)
