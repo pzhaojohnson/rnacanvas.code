@@ -8,7 +8,7 @@ Two of the main goals of RNAcanvas Code are:
 Feel free to send any questions to [contact@rnacanvas.app](contact@rnacanvas.app)
 or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on GitHub.
 
-<b>In progress:</b>
+## In progress:
 
 Some features that RNAcanvas Code doesn't yet have...
 
