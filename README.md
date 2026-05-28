@@ -10,8 +10,10 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 
 # Custom GPT
 
-Perhaps, the most straightforward way to learn more about RNAcanvas
+Perhaps, the most straightforward way to learn more about the RNAcanvas app and its codebase
 is to ask questions to the [RNAcanvas GPT](https://chatgpt.com/g/g-jh8gXtvrC-rnacanvas-gpt).
+
+(The RNAcanvas GPT has been trained on the entire RNAcanvas codebase.)
 
 Of course, the RNAcanvas GPT may make mistakes sometimes.
 
