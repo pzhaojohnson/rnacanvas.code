@@ -10,7 +10,7 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 
 ### In progress:
 
-Some features that RNAcanvas Code doesn't yet have...
+Some features that RNAcanvas Code doesn't have (yet)...
 
 - (Curved) tertiary bonds
 - Support for Leontis-Westhof bond notations (i.e., strung elements)
