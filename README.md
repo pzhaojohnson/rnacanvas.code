@@ -13,7 +13,7 @@ or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on Git
 Some features that RNAcanvas Code doesn't yet have...
 
 - (Curved) tertiary bonds
-- Leontis-Westhof bond notations (i.e., strung elements)
+- Support for Leontis-Westhof bond notations (i.e., strung elements)
 - A GUI form to aid coloring / outlining bases according to chemical probing data
 
 # Custom GPT
