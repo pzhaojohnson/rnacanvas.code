@@ -8,6 +8,14 @@ Two of the main goals of RNAcanvas Code are:
 Feel free to send any questions to [contact@rnacanvas.app](contact@rnacanvas.app)
 or [open an issue](https://github.com/pzhaojohnson/rnacanvas.code/issues) on GitHub.
 
+### In progress
+
+Some features that RNAcanvas Code doesn't yet have:
+
+- (Curved) tertiary bonds
+- Leontis-Westhof bond notations (i.e., strung elements)
+- A GUI form to aid coloring / outlining bases according to chemical probing data
+
 # Custom GPT
 
 Perhaps, the most straightforward way to learn more about the RNAcanvas app and its codebase
