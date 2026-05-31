@@ -172,7 +172,7 @@ untangle(bases, basePairs, { spacing: 20, basePairSpacing: 10, hairpinLoopSpacin
 
 ## Exporting a drawing
 
-Drawings can be exported in SVG format.
+Drawings can be directly exported in SVG format (within the web browser RNAcanvas drawings are SVG images).
 
 SVG images are vector graphics images
 and can be opened (and edited further) in vector graphics softwares such as Adobe Illustrator and Inkscape.
