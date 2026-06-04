@@ -41,6 +41,17 @@ and going to the `Console` tab.
 By default, RNAcanvas initializes certain variables within the global JavaScript environment
 (such as a reference to the RNAcanvas `app` object).
 
+### Closing the Start page
+
+To close the Start page
+(the page that is shown when first opening the app)
+and view the current drawing,
+use the `close()` method.
+
+```javascript
+app.startPage.close();
+```
+
 ## Drawing a structure
 
 In general, the `draw()` method of the RNAcanvas app object tries to support common sequence and nucleic acid structure formats.
